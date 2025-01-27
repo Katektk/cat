@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inder&family=Irish+Grover&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-wrapper">
+                    <nav class="nav">
+                        <a href="#" class="nav-link">Все персонажи</a>
+                    </nav>
+                    <div class="logo"></div>
+            </div>
+        </div>
+    </header> 
+    <main>
+        <section>
+            <div class="container">
+                <div class="content-wrapper">
+                        <div class="left-block">
+                        <div class="paw"></div>
+                        <h1 class="header-cat">KitiCat 1</h1>
+                        </div>
+                        <div class="right-center">
+                            <div class="center-block">
+                                <button class="left-arrow" onclick="changeCharacter('left')">
+                                    <img src="image/left.svg" alt="Предыдущий">
+                                </button>
+                                <div class="cat" id="catPose1" >
+                                    <img id="elipse" src="image/elipse.svg" alt="Elipse">
+                                    <img id="body" src="image/body_1.svg" alt="Body">
+                                    <img id="eys" src="image/eys_1.svg" alt="Eyes">
+                                    <img id="ears" src="image/ears_1.svg" alt="Ears">
+                                    <img id="scarf" src="image/scarf_2.svg" alt="Scarf">
+                                    <img id="tail" src="image/tail_1_pose1brown.svg" alt="Tail">
+                                </div>
+                                <button class="right-arrow" onclick="changeCharacter('right')">
+                                    <img src="image/right.svg" alt="Следующий">
+                                </button>
+                            </div>
+                        <div class="right-block">
+                            <h2>KitiCat 1</h2>
+                            <p class="description">Catcat cat Catcat cat Catcat cat Catcat cat Catcat cat Catcat catCatcat catCatcat cat Catcat cat Catcat cat Catcat cat Catcat cat </p>
+                            <div class="cards">
+                                <div class="section">
+                                    <p class="textPanel1">Цвет котика</p>
+                                    <button class="card1" data-layer="body"><img  class="imageCat" src="image/body_1.svg" alt=""></button>
+                                    <button class="card1" data-layer="body"><img  class="imageCat" src="image/body_1black.svg" alt=""></button>
+                                    <button class="card1" data-layer="body"><img  class="imageCat" src="image/body_1red.svg" alt=""></button>
+                                    <button class="card1" data-layer="body"><img  class="imageCat" src="image/body_1grey.svg" alt=""></button>
+                                    
+                                </div>
+                                <div class="section">
+                                    <p class="textPanel1">Глаза котика</p>
+                                    <button class="card1" data-layer="eys"> <img class="imageCat" src="image/eys_1.svg" alt=""></button>
+                                    <button class="card1" data-layer="eys"><img class="imageCat"src="image/eys_2.svg" alt=""></button>
+                                    <div class="cardColor">
+                                        <button class="card4"data-layer="eys" ><img class="imageCat"src="image/eys_3.svg" alt=""></button>
+                                        
+                                    </div>
+                                </div>
+                                <div class="section">
+                                    <p class="textPanel1">Глаза котика</p>
+                                    <button class="card1" data-layer="eys"> <img class="imageCat" src="image/eys_1blue.svg" alt=""></button>
+                                    <button class="card1" data-layer="eys"><img class="imageCat" src="image/eys_2blue.svg" alt=""></button>
+                                    <div class="cardColor">
+                                        <button class="card4"data-layer="eys" ><img class="imageCat"src="image/eys_3blue.svg" alt=""></button>
+                                        
+                                    </div>
+                                </div>
+                                <div class="section">
+                                    <p class="textPanel1">Глаза котика</p>
+                                    <button class="card1" data-layer="eys"> <img class="imageCat" src="image/eys_1black.svg" alt=""></button>
+                                    <button class="card1" data-layer="eys"><img class="imageCat" src="image/eys_2black.svg" alt=""></button>
+                                    <div class="cardColor">
+                                        <button class="card4"data-layer="eys" ><img class="imageCat"src="image/eys_3black.svg" alt=""></button>
+                                        
+                                    </div>
+                                </div>
+                                <div class="section">
+                                    <p class="textPanel1">Нос и уши котика</p>
+                                    <button class="card1" data-layer="ears"> <img class="imageCat" src="image/ears_1.svg" alt=""></button>
+                                    <button class="card1" data-layer="ears"><img class="imageCat"src="image/ears_2.svg" alt=""></button>
+                                    <div class="cardColor">
+                                        <button class="card4" data-layer="ears" ><img class="imageCat"src="image/ears_3.svg" alt=""></button>
+                                    </div>
+                                </div>
+                                <div class="section">
+                                    <p class="textPanel1">Аксессуары</p>
+                                    <button class="card1" data-layer="scarf"> <img class="imageCat" src="image/scarf_1.svg" alt=""></button>
+                                    <button class="card1" data-layer="scarf"><img class="imageCat"src="image/scarf_2.svg" alt=""></button>
+                                    <div class="cardColor">
+                                        <button class="card4" data-layer="scarf" ><img class="imageCat"src="image/scarf_3.svg" alt=""></button>
+                                        
+                                    </div>
+                                </div>
+                                <div class="section">
+                                    <p class="textPanel1">Аксессуары</p>
+                                    <button class="card1" data-layer="scarf"> <img class="imageCat" src="image/scarf_1blue.svg" alt=""></button>
+                                    <button class="card1" data-layer="scarf"><img class="imageCat"src="image/scarf_2blue.svg" alt=""></button>
+                                    <div class="cardColor">
+                                        <button class="card4" data-layer="scarf" ><img class="imageCat"src="image/scarf_3blue.svg" alt=""></button>
+                                    </div>
+                                </div>
+                                <div class="section">
+                                    <p class="textPanel1">Аксессуары</p>
+                                    <button class="card1" data-layer="scarf"> <img class="imageCat" src="image/scarf_1pink.svg" alt=""></button>
+                                    <button class="card1" data-layer="scarf"><img class="imageCat"src="image/scarf_2pink.svg" alt=""></button>
+                                    <div class="cardColor">
+                                        <button class="card4" data-layer="scarf" ><img class="imageCat"src="image/scarf_3pink.svg" alt=""></button>
+                                    </div>
+                                </div>
+                                <div class="section">
+                                    <p class="textPanel1">Хвост</p>
+                                    <button class="card1" data-layer = "tail" data-pose="pose1"><img class="imageCat" src="image/tail_1_pose1brown.svg" alt=""></button>
+                                    <button class="card1" data-layer="tail" data-pose="pose1"><img class="imageCat"src="image/tail_2_pose1brown.svg" alt=""></button>
+                                    
+                                </div>
+                                <div class="section">
+                                    <p class="textPanel1">Хвост</p>
+                                    <button class="card1" data-layer = "tail" data-pose="pose1"><img class="imageCat" src="image/tail_1_pose1black.svg" alt=""></button>
+                                    <button class="card1" data-layer="tail"data-pose="pose1" ><img class="imageCat"src="image/tail_2_pose1black.svg" alt=""></button>
+                                </div>
+                                <div class="section">
+                                    <p class="textPanel1">Хвост</p>
+                                    <button class="card1" data-layer = "tail" data-pose="pose1"><img class="imageCat" src="image/tail_1_pose1red.svg" alt=""></button>
+                                    <button class="card1" data-layer="tail"data-pose="pose1" ><img class="imageCat"src="image/tail_2_pose1red.svg" alt=""></button>
+                                </div>
+                                <div class="section">
+                                    <p class="textPanel1">Хвост</p>
+                                    <button class="card1" data-layer = "tail" data-pose="pose1"><img class="imageCat" src="image/tail_1_pose1grey.svg" alt=""></button>
+                                    <button class="card1" data-layer="tail"data-pose="pose1" ><img class="imageCat"src="image/tail_2_pose1grey.svg" alt=""></button>
+                                </div>
+                                
+                                <button class="arrowPanelLeft">
+                                    <img src="image/leftPanel.svg" alt="">
+                                </button>
+                                <button class="arrowPanelRight">
+                                    <img src="image/rightPanel.svg" alt="">
+                                </button>
+                            </div>
+                            <img class="clew" src="image/clew.svg" alt="">
+                        </div>
+                </div>
+            </div>
+        </section>
+    </main> 
+    <div class="container">
+        <footer>
+            <p class="textFooter">Catcat cat Catcat cat Catcat cat Catcat cat Catcat cat Catcat catCatcat catCatcat cat Catcat cat Catcat cat Catcat cat Catcat cat Catcat cat Catcat cat Catcat cat Catcat cat Catcat cat Catcat catCatcat catCatcat cat Catcat cat Catcat cat Catcat cat Catcat cat </p>
+        </footer>
+        <script src="scripts/script.js"></script>
+
+    </div> 
+    
+    
+</body>
+</html>
